@@ -336,7 +336,9 @@ ins {
 big {
 	font-size: 125%;
 }
-
+header {
+	font-size: 1rem;
+}
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -408,6 +410,18 @@ img {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+}
+.site-branding {
+	margin: auto;
+	padding: 30px 100px 30px 100px;
+	text-align: center;
+	background: #111111;
+}
+#site-navigation {
+	margin: auto;
+	padding: 30px 100px 30px 100px;
+	text-align: center;
+	background: #111111;
 }
 /*Masonry components*/
 #grid-container {
@@ -562,25 +576,26 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	/*display: block;
+	float: left;*/
+	margin: auto;
 	width: 100%;
 }
 
 .main-navigation ul {
-	display: none;
+	/*display: inline;*/
 	list-style: none;
-	margin: 0;
+	margin: auto;
 	padding-left: 0;
 }
 
 .main-navigation li {
-	float: left;
+	float:left;
 	position: relative;
 }
 
 .main-navigation a {
-	display: block;
+	display: inline;
 	text-decoration: none;
 }
 
@@ -637,7 +652,7 @@ a:active {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: inline;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -669,6 +684,10 @@ a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+.menu-item {
+	margin: 3px 10px 3px 10px;
 }
 
 /*--------------------------------------------------------------
@@ -725,7 +744,7 @@ a:active {
 
 .aligncenter {
 	clear: both;
-	display: block;
+	display: inline;
 	margin-left: auto;
 	margin-right: auto;
 }
