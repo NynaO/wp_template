@@ -268,6 +268,7 @@ textarea {
 	font-size: 0.75rem;
 	line-height: 1.5;
 }
+#single-content,
 .brick {
 	color: #000;
 }
@@ -416,19 +417,17 @@ table {
 	margin: auto;
 	padding: 30px 100px 30px 100px;
 	text-align: center;
-	background: #111111;
 }
 #site-navigation {
 	margin: auto;
 	padding: 30px 100px 30px 100px;
 	text-align: center;
-	background: #111111;
 }
 /*Masonry components*/
 #grid-container {
-    width: 1260px; // width of the entire container for the wall
+    width: 100%; // width of the entire container for the wall
 	margin: auto;
-	padding: 0px 0px 0px 100px;
+	padding: 50px 0px 0px 100px;
 }
 .brick {
 	background: #EEEEEE;
@@ -560,7 +559,8 @@ textarea {
 a {
 	color: #DDD;
 }
-.brick a {
+.brick a,
+#single-content a {
 	color: #111;
 }
 
@@ -840,7 +840,12 @@ a:active {
 	margin: 0 0 1.5em;
 }
 #single-content {
+		width: 90%;
+		margin: auto;
 		padding: 50px 50px 50px 50px;
+		background: #EEEEEE;
+		border: 1px solid;
+		box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 	}
 .entry-title {
 	text-align: center;}
