@@ -9,13 +9,10 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: faux-cale
 Tags:
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 faux-cale is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
@@ -271,6 +268,12 @@ textarea {
 	font-size: 0.75rem;
 	line-height: 1.5;
 }
+.brick {
+	color: #000;
+}
+.site-branding,
+.main-navigation {
+	font-size: 1rem;}
 
 h1,
 h2,
@@ -351,7 +354,7 @@ html {
 }
 
 body {
-	background: #000; /* Fallback for when there is no custom background color defined. */
+	background: #222; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -409,16 +412,31 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+.site-branding {
+	margin: auto;
+	padding: 30px 100px 30px 100px;
+	text-align: center;
+	background: #111111;
+}
+#site-navigation {
+	margin: auto;
+	padding: 30px 100px 30px 100px;
+	text-align: center;
+	background: #111111;
+}
 /*Masonry components*/
 #grid-container {
-    width: 1460px; // width of the entire container for the wall
+    width: 1260px; // width of the entire container for the wall
 	margin: auto;
 	padding: 0px 0px 0px 100px;
 }
 .brick {
-	background: #333333;
+	background: #EEEEEE;
 	width: 220px;
 	margin-bottom: 10px;
+	padding: 1em;
+	border: 1px solid;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
 
 /*--------------------------------------------------------------
@@ -527,7 +545,12 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
-
+#searchform {
+	float: right;
+	}
+#searchform input[type="text"] {
+	background: #333;
+	color: #DDD;}
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -537,15 +560,21 @@ textarea {
 a {
 	color: #DDD;
 }
+.brick a {
+	color: #111;
+}
 
 a:visited {
 	color: #BBB;
+}
+.brick a:visited {
+	color: #4c1d5c;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #4c1d5c;
 }
 
 a:focus {
@@ -560,9 +589,12 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.menu-item {
+	display: inline;}
+
 .main-navigation {
 	clear: both;
-	display: block;
+	/*display: block;*/
 	float: left;
 	width: 100%;
 }
@@ -570,17 +602,18 @@ a:active {
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
+	margin: 3px;
 	padding-left: 0;
 }
 
 .main-navigation li {
-	float: left;
+	/*float: left;*/
 	position: relative;
+	margin: 0px 10px 0px 0px;
 }
 
 .main-navigation a {
-	display: block;
+	/*display: block;*/
 	text-decoration: none;
 }
 
@@ -653,6 +686,7 @@ a:active {
 .site-main .posts-navigation,
 .site-main .post-navigation {
 	margin: 0 0 1.5em;
+	padding: 50px 50px 50px 50px;
 	overflow: hidden;
 }
 
@@ -805,7 +839,13 @@ a:active {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-
+#single-content {
+		padding: 50px 50px 50px 50px;
+	}
+.entry-title {
+	text-align: center;}
+.ContentBox img {
+	float: center;}
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -813,6 +853,11 @@ a:active {
 .archive .format-aside .entry-title {
 	display: none;
 }
+.widget-area {
+	float: right;
+	margin: 50px;
+	width: 200px;
+	}
 
 /*--------------------------------------------------------------
 ## Comments
