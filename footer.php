@@ -24,7 +24,7 @@
 <!--Masonry init-->
 <script>
 jQuery( document ).ready( function( $ ) {
-    $( '#grid-container' ).masonry( { itemSelector: '.brick', columnWidth: 220, gutter: 10} );
+    $( '#grid-container' ).masonry( { itemSelector: '.brick', columnWidth: 270, gutter: 10} );
 } );
 </script>
 

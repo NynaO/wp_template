@@ -264,12 +264,13 @@ input,
 select,
 textarea {
 	color: #AAAAAA;
-	font-family: sans-serif;
-	font-size: 0.75rem;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1rem;
 	line-height: 1.5;
 }
 #single-content,
-.brick {
+.brick,
+.search-excerpts {
 	color: #000;
 }
 .site-branding,
@@ -283,6 +284,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: 'Playfair Display', serif;
 }
 
 p {
@@ -424,19 +426,26 @@ table {
 	text-align: center;
 }
 /*Masonry components*/
-#grid-container {
+#grid-container,
+#search-res {
     width: 100%; // width of the entire container for the wall
 	margin: auto;
 	padding: 50px 0px 0px 100px;
 }
 .brick {
 	background: #EEEEEE;
-	width: 220px;
+	width: 270px;
 	margin-bottom: 10px;
 	padding: 1em;
 	border: 1px solid;
 	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
 }
+.search-excerpts {
+	margin: 0em 4em 1em 0em;
+	background: #EEEEEE;
+	padding: 1em;
+	border: 1px solid;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);}
 
 /*--------------------------------------------------------------
 # Forms
@@ -560,14 +569,16 @@ a {
 	color: #DDD;
 }
 .brick a,
-#single-content a {
+#single-content a,
+.search-excerpts a {
 	color: #111;
 }
 
 a:visited {
 	color: #BBB;
 }
-.brick a:visited {
+.brick a:visited,
+.search-excerpts a:visited {
 	color: #4c1d5c;
 }
 
@@ -863,10 +874,21 @@ a:active {
 	margin: 50px;
 	width: 200px;
 	}
-
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#colophon {
+	padding: 1em;
+	margin: 1em;
+	}
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+#comments {
+	padding: 3em;
+	margin: 1em;
+	border: 0.125em solid #DDDDDD;
+}
 .comment-content a {
 	word-wrap: break-word;
 }
